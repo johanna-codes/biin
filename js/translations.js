@@ -19,14 +19,6 @@ const translations = {
         'products.garage_desc': 'Desarrollo ágil e innovación continua',
         'products.learn_more': 'Conocer más →',
         
-        // About Section
-        'about.title': 'Acerca de biin',
-        'about.subtitle': 'Nuestra misión y valores',
-        'about.innovation': 'Innovación',
-        'about.innovation_content': 'Impulsamos la transformación digital con soluciones creativas que humanizen la tecnología y generen valor real.',
-        'about.excellence': 'Excelencia',
-        'about.excellence_content': 'Nos comprometemos con la calidad, mejora continua y las mejores prácticas en cada proyecto que emprendemos.',
-        
         // Resources Section
         'resources.title': 'Recursos',
         'resources.subtitle': 'Explora nuestras soluciones y opiniones de clientes',
@@ -36,23 +28,29 @@ const translations = {
         'resources.faq_desc': 'Respuestas a las preguntas más comunes sobre nuestros productos y servicios.',
         'resources.testimonials': 'Testimonios',
         'resources.testimonials_desc': 'Lee las experiencias y opiniones de nuestros clientes satisfechos.',
-        'tracker.title': 'Tracker - Seguimiento en Tiempo Real',
-        'tracker.subtitle': 'Sistema avanzado de rastreo y monitoreo',
+        
+        // Tracker Section
+        'tracker.title': 'Tracker',
+        'tracker.subtitle': 'Seguimiento en Tiempo Real',
         'tracker.description': '¿Qué es Tracker?',
-        'tracker.content': 'Nuestro sistema de tracking permite monitorear en tiempo real activos, personal y operaciones. Con visualización de datos avanzada e indicadores intuitivos, facilita la toma de decisiones estratégicas.',
-        'tracker.feature1': 'Monitoreo en tiempo real',
-        'tracker.feature2': 'Análisis de datos avanzado',
-        'tracker.feature3': 'Interfaz intuitiva',
-        'tracker.feature4': 'Reportes detallados',
+        'tracker.content': 'Tracker es nuestro sistema integral de seguimiento y monitoreo en tiempo real. Proporciona control completo sobre operaciones, activos y pasajeros con indicadores clave de rendimiento.',
+        'tracker.feature1': 'Control de Pasajeros',
+        'tracker.feature2': 'Seguimiento AVL (Ubicación Automática de Vehículos)',
+        'tracker.feature3': 'Indicadores de Frecuencia y Regularidad',
+        'tracker.feature4': 'Métricas de Puntualidad',
+        'tracker.feature5': 'Análisis de datos avanzado',
+        'tracker.feature6': 'Reportes detallados',
         'tracker.realtime': 'Vista de Rastreo en Tiempo Real',
         
-        // Contact
-        'contact.title': '¡Contáctanos!',
-        'contact.subtitle': 'Queremos conocer tu proyecto',
-        'contact.button': 'Enviar Mensaje',
+        // About Section
+        'about.title': 'Acerca de biin',
+        'about.subtitle': 'Nuestros Productos',
+        'about.tracker_title': 'Tracker',
+        'about.tracker_content': 'Control integral de operaciones con seguimiento en tiempo real. Monitorea pasajeros, vehículos mediante AVL, y mide indicadores críticos como frecuencia, regularidad y puntualidad.',
+        'about.garage_title': 'Garage',
+        'about.garage_content': 'Desarrollo ágil e innovación continua. Creamos soluciones personalizadas con las mejores prácticas tecnológicas para transformar tu negocio.',
         
-        // Footer
-        'footer.text': '© 2026 Biin. Todos los derechos reservados.'
+        // Avatars
         'avatars.title': 'Conoce al Equipo Biin',
         'avatars.subtitle': 'Conceptos complejos explicados de forma simple y humanizada',
         'avatars.persona1': 'Experto en Datos',
@@ -92,40 +90,36 @@ const translations = {
         'products.garage_desc': 'Agile development and continuous innovation',
         'products.learn_more': 'Learn more →',
         
-        // About Section
-        'about.title': 'About biin',
-        'about.subtitle': 'Our mission and values',
-        'about.innovation': 'Innovation',
-        'about.innovation_content': 'We drive digital transformation with creative solutions that humanize technology and generate real value.',
-        'about.excellence': 'Excellence',
-        'about.excellence_content': 'We are committed to quality, continuous improvement and best practices in every project we undertake.',
-        
         // Resources Section
         'resources.title': 'Resources',
-        'resources.subtitle': 'Documentation, guides and support material',
-        'resources.docs': 'Documentation',
-        'resources.docs_desc': Explore our solutions and customer opinions',
+        'resources.subtitle': 'Explore our solutions and customer opinions',
         'resources.market': 'Our Marketplace',
         'resources.market_desc': 'Discover all our solutions, integrations and available extensions.',
         'resources.faq': 'Frequently Asked Questions',
         'resources.faq_desc': 'Answers to the most common questions about our products and services.',
         'resources.testimonials': 'Testimonials',
-        'resources.testimonials_desc': 'Read the experiences and opinions of our satisfied customers
+        'resources.testimonials_desc': 'Read the experiences and opinions of our satisfied customers.',
+        
+        // Tracker Section
+        'tracker.title': 'Tracker',
+        'tracker.subtitle': 'Real-Time Tracking',
         'tracker.description': 'What is Tracker?',
-        'tracker.content': 'Our tracking system allows you to monitor assets, personnel, and operations in real-time. With advanced data visualization and intuitive indicators, it facilitates strategic decision-making.',
-        'tracker.feature1': 'Real-time monitoring',
-        'tracker.feature2': 'Advanced data analysis',
-        'tracker.feature3': 'Intuitive interface',
-        'tracker.feature4': 'Detailed reports',
+        'tracker.content': 'Tracker is our comprehensive real-time monitoring and tracking system. It provides complete control over operations, assets and passengers with key performance indicators.',
+        'tracker.feature1': 'Passenger Control',
+        'tracker.feature2': 'AVL Tracking (Automatic Vehicle Location)',
+        'tracker.feature3': 'Frequency and Regularity Indicators',
+        'tracker.feature4': 'Punctuality Metrics',
+        'tracker.feature5': 'Advanced data analysis',
+        'tracker.feature6': 'Detailed reports',
         'tracker.realtime': 'Real-Time Tracking View',
         
-        // Garage Section
-        'garage.title': 'Biin Garage - Innovation and Development',
-        'garage.subtitle': 'Space for creativity and technological solutions',
-        'garage.description': 'Agile Development',
-        'garage.content': 'We create customized solutions tailored to your specific needs with agile methodologies and modern technologies.',
-        'garage.innovation': 'Continuous Innovation',
-        'garage.innovation_content': 'We focus on continuous improvement and adopting the best practices in the technology industry.',
+        // About Section
+        'about.title': 'About biin',
+        'about.subtitle': 'Our Products',
+        'about.tracker_title': 'Tracker',
+        'about.tracker_content': 'Comprehensive operations control with real-time tracking. Monitor passengers, vehicles via AVL, and measure critical indicators such as frequency, regularity and punctuality.',
+        'about.garage_title': 'Garage',
+        'about.garage_content': 'Agile development and continuous innovation. We create customized solutions with best technology practices to transform your business.',
         
         // Avatars
         'avatars.title': 'Meet the Biin Team',
@@ -139,12 +133,12 @@ const translations = {
         'avatars.persona4': 'Strategic Advisor',
         'avatars.persona4_desc': 'Proposes improvements and optimizations',
         
-        // References
-        'references.title': 'Design Inspiration',
-        'references.subtitle': 'Models that inspire us',
-        'references.desc': 'Advanced AI solutions',
-        'references.desc2': 'Learning platform',
-        'references.desc3': 'Excellence in design and UX',
+        // Contact
+        'contact.title': 'Contact Us!',
+        'contact.subtitle': 'We want to know about your project',
+        'contact.button': 'Send Message',
         
-        // 
+        // Footer
+        'footer.text': '© 2026 Biin. All rights reserved.'
+    }
 };
