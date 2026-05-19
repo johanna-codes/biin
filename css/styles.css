@@ -238,6 +238,28 @@ body {
     border-left: 4px solid var(--primary-color);
     transition: var(--transition);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-preview.product-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.product-preview.product-logo img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+    transition: var(--transition);
+}
+
+.product-preview.product-logo:hover img {
+    transform: scale(1.1);
 }
 
 .product-preview:nth-child(2) {
@@ -359,48 +381,39 @@ body {
 }
 
 /* ============================
-   GARAGE/ABOUT SECTION
+   ABOUT SECTION
    ============================ */
-.garage-section {
+.about-section {
     background: white;
 }
 
-.garage-grid {
+.about-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-.garage-card {
+.about-card {
     background: var(--light-color);
     padding: 2rem;
     border-radius: 8px;
-    text-align: center;
+    text-align: left;
     transition: var(--transition);
-    border: 2px solid transparent;
+    border-left: 4px solid var(--primary-color);
 }
 
-.garage-card:hover {
+.about-card:hover {
     transform: translateY(-5px);
-    border-color: var(--primary-color);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.garage-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-.garage-card h3 {
+.about-card h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     color: var(--primary-color);
 }
 
-.garage-card p {
+.about-card p {
     color: #5f6368;
     line-height: 1.6;
 }
@@ -619,7 +632,7 @@ body {
     }
 
     .avatars-grid,
-    .garage-grid,
+    .about-content,
     .resources-grid,
     .products-cards {
         grid-template-columns: 1fr;
@@ -742,15 +755,15 @@ body {
         font-size: 0.85rem;
     }
 
-    .garage-card {
+    .about-card {
         padding: 1.5rem;
     }
 
-    .garage-card h3 {
+    .about-card h3 {
         font-size: 1.1rem;
     }
 
-    .garage-card p {
+    .about-card p {
         font-size: 0.85rem;
     }
 
