@@ -42,13 +42,29 @@ const translations = {
         'tracker.feature6': 'Reportes detallados',
         'tracker.realtime': 'Vista de Rastreo en Tiempo Real',
         
+        // Garage Section
+        'garage.title': 'Garage',
+        'garage.subtitle': 'Desarrollo Ágil e Innovación',
+        'garage.description': '¿Qué es Garage?',
+        'garage.content': 'Garage es nuestro equipo de desarrollo ágil que crea soluciones personalizadas e innovadoras. Transformamos tus ideas en productos tangibles utilizando las mejores prácticas tecnológicas y metodologías modernas.',
+        'garage.feature1': 'Desarrollo Ágil y Escalable',
+        'garage.feature2': 'Arquitectura Moderna y Robusta',
+        'garage.feature3': 'Integración con Sistemas Existentes',
+        'garage.feature4': 'Mantenimiento y Soporte Continuo',
+        'garage.feature5': 'Innovación Tecnológica',
+        'garage.feature6': 'Optimización de Procesos',
+        'garage.expertise': 'Nuestra Experiencia',
+        'garage.expertise_content': 'Con años de experiencia en desarrollo de software, hemos ayudado a empresas de diferentes sectores a transformar sus operaciones mediante soluciones tecnológicas innovadoras y eficientes.',
+        
         // About Section
         'about.title': 'Acerca de biin',
-        'about.subtitle': 'Nuestros Productos',
-        'about.tracker_title': 'Tracker',
-        'about.tracker_content': 'Control integral de operaciones con seguimiento en tiempo real. Monitorea pasajeros, vehículos mediante AVL, y mide indicadores críticos como frecuencia, regularidad y puntualidad.',
-        'about.garage_title': 'Garage',
-        'about.garage_content': 'Desarrollo ágil e innovación continua. Creamos soluciones personalizadas con las mejores prácticas tecnológicas para transformar tu negocio.',
+        'about.subtitle': 'Nuestra misión y visión',
+        'about.mission_title': 'Nuestra Misión',
+        'about.mission_content': 'En Biin, nos dedicamos a humanizar la tecnología y crear soluciones que realmente transforman los negocios. Combinamos innovación, calidad y atención al detalle en cada proyecto.',
+        'about.vision_title': 'Nuestra Visión',
+        'about.vision_content': 'Ser el socio tecnológico de confianza para empresas que buscan crecer, innovar y optimizar sus operaciones mediante soluciones inteligentes y accesibles.',
+        'about.excellence': 'Excelencia',
+        'about.excellence_content': 'Nos comprometemos con la calidad, mejora continua y las mejores prácticas en cada proyecto que emprendemos.',
         
         // Avatars
         'avatars.title': 'Conoce al Equipo Biin',
@@ -113,13 +129,29 @@ const translations = {
         'tracker.feature6': 'Detailed reports',
         'tracker.realtime': 'Real-Time Tracking View',
         
+        // Garage Section
+        'garage.title': 'Garage',
+        'garage.subtitle': 'Agile Development and Innovation',
+        'garage.description': 'What is Garage?',
+        'garage.content': 'Garage is our agile development team that creates customized and innovative solutions. We transform your ideas into tangible products using best technology practices and modern methodologies.',
+        'garage.feature1': 'Agile and Scalable Development',
+        'garage.feature2': 'Modern and Robust Architecture',
+        'garage.feature3': 'Integration with Existing Systems',
+        'garage.feature4': 'Continuous Maintenance and Support',
+        'garage.feature5': 'Technological Innovation',
+        'garage.feature6': 'Process Optimization',
+        'garage.expertise': 'Our Experience',
+        'garage.expertise_content': 'With years of experience in software development, we have helped companies from different sectors transform their operations through innovative and efficient technological solutions.',
+        
         // About Section
         'about.title': 'About biin',
-        'about.subtitle': 'Our Products',
-        'about.tracker_title': 'Tracker',
-        'about.tracker_content': 'Comprehensive operations control with real-time tracking. Monitor passengers, vehicles via AVL, and measure critical indicators such as frequency, regularity and punctuality.',
-        'about.garage_title': 'Garage',
-        'about.garage_content': 'Agile development and continuous innovation. We create customized solutions with best technology practices to transform your business.',
+        'about.subtitle': 'Our mission and vision',
+        'about.mission_title': 'Our Mission',
+        'about.mission_content': 'At Biin, we are dedicated to humanizing technology and creating solutions that really transform businesses. We combine innovation, quality and attention to detail in every project.',
+        'about.vision_title': 'Our Vision',
+        'about.vision_content': 'To be the trusted technology partner for companies seeking to grow, innovate and optimize their operations through intelligent and accessible solutions.',
+        'about.excellence': 'Excellence',
+        'about.excellence_content': 'We are committed to quality, continuous improvement and best practices in every project we undertake.',
         
         // Avatars
         'avatars.title': 'Meet the Biin Team',
