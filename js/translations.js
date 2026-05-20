@@ -8,7 +8,7 @@ const translations = {
         
         // Hero
         'hero.title': 'biin',
-        'hero.subtitle': 'Soluciones inteligentes para humanizar la tecnología',
+        'hero.subtitle': 'Soluciones Integrales para el Transporte',
         'hero.products': 'Nuestros productos: Tracker & Garage',
         'hero.cta': 'Explorar Más',
         
@@ -95,7 +95,7 @@ const translations = {
         
         // Hero
         'hero.title': 'biin',
-        'hero.subtitle': 'Intelligent solutions to humanize technology',
+        'hero.subtitle': 'Smart Transportation Solutions',
         'hero.products': 'Our products: Tracker & Garage',
         'hero.cta': 'Explore More',
         
