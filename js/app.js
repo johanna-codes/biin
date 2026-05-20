@@ -134,6 +134,11 @@ document.addEventListener('DOMContentLoaded', function() {
         section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
         observer.observe(section);
     });
+
+    // Initialize horizontal scrollers
+    setupHorizontalScroll('products-cards');
+    setupHorizontalScroll('about-cards');
+    setupHorizontalScroll('resources-cards');
 });
 
 // ============================
@@ -149,4 +154,26 @@ function translate(key) {
         return translations[currentLanguage][key];
     }
     return key;
+}
+
+// Horizontal scroll helper: connects prev/next buttons to a scrolling container
+function setupHorizontalScroll(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    const prev = document.querySelector(`.scroll-btn.prev[data-target="${containerId}"]`);
+    const next = document.querySelector(`.scroll-btn.next[data-target="${containerId}"]`);
+
+    const scrollAmount = container.clientWidth || 600;
+
+    if (prev) {
+        prev.addEventListener('click', () => {
+            container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+    }
+    if (next) {
+        next.addEventListener('click', () => {
+            container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    }
 }

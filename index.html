@@ -54,21 +54,25 @@
                 <h2 data-translate="products.title">Nuestros Productos</h2>
                 <p data-translate="products.subtitle">Dos soluciones potentes para transformar tu negocio</p>
             </div>
-            <div class="products-cards">
-                <a href="#tracker" class="product-preview product-logo">
-                    <div class="product-image-wrapper">
-                        <img src="images/biin_tracker_logo.jpeg" alt="Tracker Logo">
-                    </div>
-                    <h3>Tracker</h3>
-                    <p data-translate="products.tracker_desc">Monitoreo en tiempo real de activos, personal y operaciones</p>
-                </a>
-                <a href="#garage" class="product-preview product-logo">
-                    <div class="product-image-wrapper">
-                        <img src="images/biin_garage_logo.jpeg" alt="Garage Logo">
-                    </div>
-                    <h3>Garage</h3>
-                    <p data-translate="products.garage_desc">Desarrollo ágil e innovación continua</p>
-                </a>
+            <div class="products-wrapper">
+                <button class="scroll-btn prev" data-target="products-cards" aria-label="Anterior">‹</button>
+                <div class="products-cards horizontal-scroll" id="products-cards">
+                    <a href="#tracker" class="product-preview product-logo">
+                        <div class="product-image-wrapper">
+                            <img src="images/biin_tracker_logo.jpeg" alt="Tracker Logo">
+                        </div>
+                        <h3>Tracker</h3>
+                        <p data-translate="products.tracker_desc">Monitoreo en tiempo real de activos, personal y operaciones</p>
+                    </a>
+                    <a href="#garage" class="product-preview product-logo">
+                        <div class="product-image-wrapper">
+                            <img src="images/biin_garage_logo.jpeg" alt="Garage Logo">
+                        </div>
+                        <h3>Garage</h3>
+                        <p data-translate="products.garage_desc">Desarrollo ágil e innovación continua</p>
+                    </a>
+                </div>
+                <button class="scroll-btn next" data-target="products-cards" aria-label="Siguiente">›</button>
             </div>
         </div>
     </section>
@@ -147,19 +151,23 @@
                 <p data-translate="about.subtitle">Nuestra misión y visión</p>
             </div>
 
-            <div class="about-content">
-                <div class="about-card">
-                    <h3 data-translate="about.mission_title">Nuestra Misión</h3>
-                    <p data-translate="about.mission_content">En Biin, nos dedicamos a humanizar la tecnología y crear soluciones que realmente transforman los negocios. Combinamos innovación, calidad y atención al detalle en cada proyecto.</p>
+            <div class="about-wrapper">
+                <button class="scroll-btn prev" data-target="about-cards" aria-label="Anterior">‹</button>
+                <div class="about-content horizontal-scroll" id="about-cards">
+                    <div class="about-card">
+                        <h3 data-translate="about.mission_title">Nuestra Misión</h3>
+                        <p data-translate="about.mission_content">En Biin, nos dedicamos a humanizar la tecnología y crear soluciones que realmente transforman los negocios. Combinamos innovación, calidad y atención al detalle en cada proyecto.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3 data-translate="about.vision_title">Nuestra Visión</h3>
+                        <p data-translate="about.vision_content">Ser el socio tecnológico de confianza para empresas que buscan crecer, innovar y optimizar sus operaciones mediante soluciones inteligentes y accesibles.</p>
+                    </div>
+                    <div class="about-card">
+                        <h3 data-translate="about.excellence">Excelencia</h3>
+                        <p data-translate="about.excellence_content">Nos comprometemos con la calidad, mejora continua y las mejores prácticas en cada proyecto que emprendemos.</p>
+                    </div>
                 </div>
-                <div class="about-card">
-                    <h3 data-translate="about.vision_title">Nuestra Visión</h3>
-                    <p data-translate="about.vision_content">Ser el socio tecnológico de confianza para empresas que buscan crecer, innovar y optimizar sus operaciones mediante soluciones inteligentes y accesibles.</p>
-                </div>
-                <div class="about-card">
-                    <h3 data-translate="about.excellence">Excelencia</h3>
-                    <p data-translate="about.excellence_content">Nos comprometemos con la calidad, mejora continua y las mejores prácticas en cada proyecto que emprendemos.</p>
-                </div>
+                <button class="scroll-btn next" data-target="about-cards" aria-label="Siguiente">›</button>
             </div>
         </div>
     </section>
@@ -172,22 +180,26 @@
                 <p data-translate="resources.subtitle">Explora nuestras soluciones y opiniones de clientes</p>
             </div>
 
-            <div class="resources-grid">
-                <div class="resource-card">
-                    <div class="resource-icon">🏪</div>
-                    <h3 data-translate="resources.market">Nuestro Mercado</h3>
-                    <p data-translate="resources.market_desc">Descubre todas nuestras soluciones, integraciones y extensiones disponibles.</p>
+            <div class="resources-wrapper">
+                <button class="scroll-btn prev" data-target="resources-cards" aria-label="Anterior">‹</button>
+                <div class="resources-grid horizontal-scroll" id="resources-cards">
+                    <div class="resource-card">
+                        <div class="resource-icon">🏪</div>
+                        <h3 data-translate="resources.market">Nuestro Mercado</h3>
+                        <p data-translate="resources.market_desc">Descubre todas nuestras soluciones, integraciones y extensiones disponibles.</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">❓</div>
+                        <h3 data-translate="resources.faq">Preguntas Frecuentes</h3>
+                        <p data-translate="resources.faq_desc">Respuestas a las preguntas más comunes sobre nuestros productos y servicios.</p>
+                    </div>
+                    <div class="resource-card">
+                        <div class="resource-icon">⭐</div>
+                        <h3 data-translate="resources.testimonials">Testimonios</h3>
+                        <p data-translate="resources.testimonials_desc">Lee las experiencias y opiniones de nuestros clientes satisfechos.</p>
+                    </div>
                 </div>
-                <div class="resource-card">
-                    <div class="resource-icon">❓</div>
-                    <h3 data-translate="resources.faq">Preguntas Frecuentes</h3>
-                    <p data-translate="resources.faq_desc">Respuestas a las preguntas más comunes sobre nuestros productos y servicios.</p>
-                </div>
-                <div class="resource-card">
-                    <div class="resource-icon">⭐</div>
-                    <h3 data-translate="resources.testimonials">Testimonios</h3>
-                    <p data-translate="resources.testimonials_desc">Lee las experiencias y opiniones de nuestros clientes satisfechos.</p>
-                </div>
+                <button class="scroll-btn next" data-target="resources-cards" aria-label="Siguiente">›</button>
             </div>
         </div>
     </section>

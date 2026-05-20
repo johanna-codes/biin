@@ -273,6 +273,52 @@ body {
     transform: scale(1.05);
 }
 
+/* Horizontal scroll containers */
+.horizontal-scroll {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 8px;
+}
+
+.horizontal-scroll > * {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+}
+
+.products-wrapper, .about-wrapper, .resources-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.scroll-btn {
+    background: white;
+    border: 1px solid var(--border-color);
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    line-height: 1;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.scroll-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Make resource and about cards fixed width for consistent sliding */
+.about-content .about-card, .resources-grid .resource-card, .products-cards .product-preview {
+    min-width: 300px;
+    max-width: 320px;
+}
+
 .product-preview:nth-child(2) {
     border-left-color: var(--secondary-color);
 }
