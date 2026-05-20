@@ -2,8 +2,8 @@ const translations = {
     es: {
         // Navigation
         'nav.solutions': 'Soluciones',
-        'nav.about': 'Sobre Nosotros',
-        'nav.resources': 'Resources',
+        'nav.about': 'Acerca de biin',
+        'nav.resources': 'Recursos',
         'nav.contact': 'Contacto',
         
         // Hero
@@ -89,7 +89,7 @@ const translations = {
     en: {
         // Navigation
         'nav.solutions': 'Solutions',
-        'nav.about': 'About',
+        'nav.about': 'About biin',
         'nav.resources': 'Resources',
         'nav.contact': 'Contact',
         
