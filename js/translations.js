@@ -2,12 +2,12 @@ const translations = {
     es: {
         // Navigation
         'nav.solutions': 'Soluciones',
-        'nav.about': 'Acerca de biin',
+        'nav.about': 'Acerca de Biin',
         'nav.resources': 'Recursos',
         'nav.contact': 'Contacto',
         
         // Hero
-        'hero.title': 'biin',
+        'hero.title': 'Biin',
         'hero.subtitle': 'Soluciones Integrales para el Transporte',
         'hero.products': 'Nuestros productos: Tracker & Garage',
         'hero.cta': 'Explorar Más',
@@ -57,7 +57,7 @@ const translations = {
         'garage.expertise_content': 'Con años de experiencia en desarrollo de software, hemos ayudado a empresas de diferentes sectores a transformar sus operaciones mediante soluciones tecnológicas innovadoras y eficientes.',
         
         // About Section
-        'about.title': 'Acerca de biin',
+        'about.title': 'Acerca de Biin',
         'about.subtitle': 'Nuestra misión y visión',
         'about.mission_title': 'Nuestra Misión',
         'about.mission_content': 'En Biin, nos dedicamos a humanizar la tecnología y crear soluciones que realmente transforman los negocios. Combinamos innovación, calidad y atención al detalle en cada proyecto.',
@@ -89,12 +89,12 @@ const translations = {
     en: {
         // Navigation
         'nav.solutions': 'Solutions',
-        'nav.about': 'About biin',
+        'nav.about': 'About Biin',
         'nav.resources': 'Resources',
         'nav.contact': 'Contact',
         
         // Hero
-        'hero.title': 'biin',
+        'hero.title': 'Biin',
         'hero.subtitle': 'Smart Transportation Solutions',
         'hero.products': 'Our products: Tracker & Garage',
         'hero.cta': 'Explore More',
@@ -144,7 +144,7 @@ const translations = {
         'garage.expertise_content': 'With years of experience in software development, we have helped companies from different sectors transform their operations through innovative and efficient technological solutions.',
         
         // About Section
-        'about.title': 'About biin',
+        'about.title': 'About Biin',
         'about.subtitle': 'Our mission and vision',
         'about.mission_title': 'Our Mission',
         'about.mission_content': 'At Biin, we are dedicated to humanizing technology and creating solutions that really transform businesses. We combine innovation, quality and attention to detail in every project.',
