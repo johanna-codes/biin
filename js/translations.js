@@ -2,7 +2,7 @@ const translations = {
     es: {
         // Navigation
         'nav.solutions': 'Soluciones',
-        'nav.about': 'About',
+        'nav.about': 'Sobre Nosotros',
         'nav.resources': 'Resources',
         'nav.contact': 'Contacto',
         
