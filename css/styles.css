@@ -320,6 +320,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-top: 12px;
+    width: 100%;
 }
 
 .scroll-dots .dot {

@@ -170,6 +170,17 @@ function setupHorizontalScroll(containerId) {
 
     const scrollAmount = container.clientWidth || 600;
 
+    // center items when content fits in container
+    function adjustJustify() {
+        if (container.scrollWidth <= container.clientWidth + 1) {
+            container.style.justifyContent = 'center';
+        } else {
+            container.style.justifyContent = '';
+        }
+    }
+    adjustJustify();
+    window.addEventListener('resize', adjustJustify);
+
     if (prev) {
         prev.addEventListener('click', () => {
             container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
@@ -205,8 +216,9 @@ function initScrollDots(containerId) {
         dotsWrap.appendChild(dot);
     });
 
-    // insert dots after container
-    container.insertAdjacentElement('afterend', dotsWrap);
+    // insert dots after wrapper (so they appear below prev/container/next)
+    const wrapper = container.closest('.products-wrapper, .about-wrapper, .resources-wrapper') || container.parentElement;
+    wrapper.insertAdjacentElement('afterend', dotsWrap);
 
     const dotElements = Array.from(dotsWrap.children);
 
