@@ -303,7 +303,7 @@ body {
     font-size: 1.6rem;
     line-height: 1;
     cursor: pointer;
-    display: inline-flex;
+    display: none; /* hidden on mobile, shown on desktop via media query */
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -311,6 +311,29 @@ body {
 
 .scroll-btn:hover {
     transform: translateY(-3px);
+}
+
+/* Dots indicators below sliders */
+.scroll-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.scroll-dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--border-color);
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.scroll-dots .dot.active {
+    background: var(--primary-color);
+    transform: scale(1.15);
 }
 
 /* Make resource and about cards fixed width for consistent sliding */
@@ -883,6 +906,11 @@ body {
 
     .products-cards:not(.horizontal-scroll) {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* show navigation buttons on wider screens */
+    .scroll-btn {
+        display: inline-flex;
     }
 
     .tracker-content {

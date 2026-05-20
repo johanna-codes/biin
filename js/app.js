@@ -139,6 +139,10 @@ document.addEventListener('DOMContentLoaded', function() {
     setupHorizontalScroll('products-cards');
     setupHorizontalScroll('about-cards');
     setupHorizontalScroll('resources-cards');
+    // Initialize dots indicators
+    initScrollDots('products-cards');
+    initScrollDots('about-cards');
+    initScrollDots('resources-cards');
 });
 
 // ============================
@@ -176,4 +180,58 @@ function setupHorizontalScroll(containerId) {
             container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
         });
     }
+}
+
+// Create and wire dots indicators for a horizontal scroller
+function initScrollDots(containerId) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+
+    // create dots wrapper
+    const dotsWrap = document.createElement('div');
+    dotsWrap.className = 'scroll-dots';
+
+    const items = Array.from(container.children);
+    if (items.length <= 1) return;
+
+    items.forEach((item, idx) => {
+        const dot = document.createElement('div');
+        dot.className = 'dot';
+        dot.dataset.index = idx;
+        dot.addEventListener('click', () => {
+            // scroll to the item
+            container.scrollTo({ left: item.offsetLeft, behavior: 'smooth' });
+        });
+        dotsWrap.appendChild(dot);
+    });
+
+    // insert dots after container
+    container.insertAdjacentElement('afterend', dotsWrap);
+
+    const dotElements = Array.from(dotsWrap.children);
+
+    function updateActive() {
+        const center = container.scrollLeft + container.clientWidth / 2;
+        let activeIdx = 0;
+        let minDist = Infinity;
+        items.forEach((it, i) => {
+            const itCenter = it.offsetLeft + it.clientWidth / 2;
+            const dist = Math.abs(itCenter - center);
+            if (dist < minDist) { minDist = dist; activeIdx = i; }
+        });
+        dotElements.forEach((d, i) => d.classList.toggle('active', i === activeIdx));
+    }
+
+    // initial state
+    updateActive();
+
+    let resizeTimer;
+    container.addEventListener('scroll', () => {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(updateActive, 80);
+    });
+    window.addEventListener('resize', () => {
+        window.clearTimeout(resizeTimer);
+        resizeTimer = window.setTimeout(updateActive, 120);
+    });
 }
